@@ -1,0 +1,33 @@
+{
+  "name": "ui-admin",
+  "version": "1.0.32",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "vite:dev": "vite --port=3001 --open  --config=vite.dev.config.js",
+    "ui:admin": "npm run vite:dev",
+    "//build": "npm run vite:prod",
+    "vite:prod": "vite build --config=vite.prod.config.js",
+    "vite:preview": "vite preview --config=vite.prod.config.js",
+    "copy:resource": "cp CNAME docs/",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore --fix pages",
+    "format": "prettier .  --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@yorkie-team/design-system": "*",
+    "@yorkie-team/design-tokens": "*",
+    "@yorkie-team/ui": "*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@yorkie-team/config": "*",
+    "vite": "^3.1.0",
+    "vite-plugin-ssr": "^0.4.32",
+    "vitest": "0.23.2"
+  }
+}

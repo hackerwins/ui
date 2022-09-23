@@ -1,0 +1,47 @@
+{
+  "name": "@yorkie-team/design-system",
+  "version": "0.0.1",
+  "description": "Fantastic Design System ",
+  "main": "./dist/design-system.umd.js",
+  "module": "./dist/design-system.es.js",
+  "exports": {
+    "./package.json": "./package.json",
+    "./style.css": "./dist/style.css",
+    ".": {
+      "import": "./dist/design-system.es.js",
+      "require": "./dist/design-system.umd.js"
+    }
+  },
+  "dependencies": {
+    "@yorkie-team/design-tokens": "*"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "cssnano": "^5.1.13",
+    "postcss": "^8.4.16",
+    "postcss-sorting": "^7.0.1",
+    "sass": "^1.54.4",
+    "vite": "^3.0.8",
+    "vitest": "0.22.1"
+  },
+  "scripts": {
+    "vite:dev": "vite --config=vite.config.js",
+    "vite:dist": "vite build --config=vite.dist.config.js",
+    "design:watch": "vite build --config=vite.dist.config.js --watch",
+    "ui:watch": "vite build --config=vite.dist.config.js --watch",
+    "build": "npm run vite:dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yorkie-team/ui.git"
+  },
+  "keywords": [
+
+  ],
+  "author": "easylogic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yorkie-team/ui/issues"
+  },
+  "homepage": "https://ui.yorkie-team.com/"
+}

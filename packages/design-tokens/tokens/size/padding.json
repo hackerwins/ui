@@ -1,0 +1,12 @@
+{
+  "padding": {
+    "size": {
+      "xs": { "value": "{spacing.size.xs.value}" },
+      "small": { "value": "{spacing.size.sm.value}" },
+      "medium": { "value": "{spacing.size.md.value}" },
+      "large": { "value": "{spacing.size.lg.value}" },
+      "xl": { "value": "{spacing.size.xl.value}" },
+      "xxl": { "value": "{spacing.size.xxl.value}" }
+    }
+  }
+}

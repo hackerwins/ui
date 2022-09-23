@@ -1,0 +1,19 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@2.0.1/schema.json",
+  "changelog": ["@changesets/changelog-github", { "repo": "yorkie-team/ui" }],
+  "commit": false,
+  "linked": [
+    [
+      "@yorkie-team/ui",      
+      "@yorkie-team/design-system",
+      "@yorkie-team/design-tokens"            
+    ]
+  ],
+  "access": "public",
+  "baseBranch": "main",
+  "updateInternalDependencies": "patch",
+  "ignore": [],
+  "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
+    "onlyUpdatePeerDependentsWhenOutOfRange": true
+  }
+}

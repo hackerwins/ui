@@ -1,0 +1,24 @@
+@import "@yorkie-team/design-tokens/style.css";
+@import "@yorkie-team/design-tokens/tokens.css";
+
+.button {
+    --y-button-background-color: var(--color-blue-7);
+    --y-button-font-color: var(--color-black);
+    --y-button-height: 100px;
+    --y-button-text-font-size: 20px;
+
+    background-color: var(--y-button-background-color);
+    color: var(--y-button-font-color);
+    min-width: calc(var(--y-button-height) * 2.25);
+    height: var(--y-button-height);
+
+    &[disabled] {
+        cursor: not-allowed;
+    }
+
+
+    .text {
+        font-size: var(--y-button-text-font-size);
+        font-weight: 700;
+    }
+}

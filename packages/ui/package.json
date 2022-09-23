@@ -1,0 +1,57 @@
+{
+  "name": "@yorkie-team/ui",
+  "version": "0.0.1",
+  "description": "yorkie team ui",
+  "types": "./index.d.ts",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "main": "./dist/ui.umd.js",
+  "module": "./dist/ui.es.js",
+  "exports": {
+    "./package.json": "./package.json",
+    "./style.css": "./dist/style.css",
+    ".": {
+      "import": "./dist/ui.es.js",
+      "require": "./dist/ui.umd.js"
+    }
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^2.1.0",
+    "autoprefixer": "^10.4.8",
+    "cssnano": "^5.1.13",
+    "postcss": "^8.4.16",
+    "recast": "^0.21.2",
+    "sass": "^1.54.4",
+    "vite": "^3.0.8",
+    "vitest": "0.22.1"
+  },
+  "scripts": {
+    "vite:dist": "vite build --config=vite.dist.config.js",
+    "watch": "vite build --config=vite.dist.config.js --watch",
+    "ui:watch": "npm run watch",
+    "editor:watch": "npm run watch",
+    "build": "npm run vite:dist",
+    "test": "vitest",
+    "coverage": "vitest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yorkie-team/ui.git"
+  },
+  "keywords": [
+    "yorkie",
+    "ui"
+  ],
+  "author": "@yorkie-team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yorkie-team/ui/issues"
+  },
+  "homepage": "https://ui.yorkie-team.com/",
+  "dependencies": {
+    "@types/react": "^18.0.21",
+    "@yorkie-team/design-system": "*"
+  }
+}

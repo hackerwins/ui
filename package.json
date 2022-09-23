@@ -11,6 +11,8 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel --profile",
+    "ui:dev": "turbo run ui:dev --parallel",    
+    "ui:admin": "turbo run ui:admin --parallel",    
     "changeset": "changeset",
     "version-packages": "changeset version",
     "prerelease": "npm run build",

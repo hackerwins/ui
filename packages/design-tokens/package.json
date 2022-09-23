@@ -1,0 +1,37 @@
+{
+  "name": "@yorkie-team/design-tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./style.css": "./dist/css/style.css",
+    "./tokens.css": "./dist/css/tokens.css",
+    "./tokens.es.js": "./dist/es/tokens.js",
+    "./tokens.es.d.ts": "./dist/es/tokens.d.ts",
+    "./tokens.module.js": "./dist/module/tokens.js",
+    "./tokens.module.d.ts": "./dist/module/tokens.d.ts",
+    "./tokens.umd.js": "./dist/umd/tokens.js",
+    "./tokens.json": "./dist/tokens.json"
+  },
+  "scripts": {
+    "build": "node scripts/build.js && npm run build:style",
+    "build:style": "node scripts/build-style.js",
+    "build:all": "node scripts/build-all.js",
+    "watch": "npm run build && chokidar  \"tokens/**/*.js*\" -c \"npm run build\"",
+    "watch:all": "npm run build:all && chokidar  \"tokens/**/*.js*\" -c \"npm run build:all\"",
+    "ui:watch": "npm run watch",
+    "ui:watch:all": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "@yorkie-team",
+  "license": "MIT",
+  "devDependencies": {
+    "@divriots/style-dictionary-to-figma": "^0.3.0",
+    "chokidar-cli": "^3.0.0",
+    "style-dictionary": "^3.7.1"
+  }
+}

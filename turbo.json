@@ -26,37 +26,9 @@
       "dependsOn": ["ui:watch"],
       "cache": false
     },
-    "ssr:watch": {
-      "dependsOn": [
-        "^ssr:watch"
-      ],
-      "outputs": ["dist/**", ".next/**"],
+    "ui:admin": {
+      "dependsOn": ["ui:watch"],
       "cache": false
-    },    
-    "ssr:dev": {
-      "dependsOn": ["ssr:watch"],
-      "cache": false
-    },    
-    "editor:watch": {
-      "dependsOn": [
-        "^editor:watch"
-      ],
-      "outputs": ["dist/**", ".next/**"],
-      "cache": false
-    },        
-    "editor:dev": {
-      "dependsOn": ["editor:watch"]
-    },    
-    "ui-react:watch": {
-      "dependsOn": [
-        "^ui-react:watch"
-      ],
-      "outputs": ["dist/**", ".next/**"],
-      "cache": false
-    },        
-    "ui-react:dev": {
-      "dependsOn": ["ui-react:watch"]
-    }                                   
-
+    }
   }
 }
